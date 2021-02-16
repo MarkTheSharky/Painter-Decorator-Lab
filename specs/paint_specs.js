@@ -6,12 +6,17 @@ describe('Paint', function() {
     let paint
 
     beforeEach(function() {
-        paint = new Paint(1)
+        paint = new Paint('Red', 5)
     })
 
     it('should have litres', function() {
         const actual = paint.litres
-        assert.strictEqual(actual, 1)
+        assert.strictEqual(actual, 5)
+    })
+
+    it('should have colour', function() {
+        const actual = paint.colour
+        assert.strictEqual(actual, 'Red')
     })
 
     it('should not be empty', function () {

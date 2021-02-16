@@ -1,4 +1,5 @@
-const Paint = function(litres) {
+const Paint = function(colour, litres) {
+    this.colour = colour;
     this.litres = litres;
     this.isEmpty = false;
 }
